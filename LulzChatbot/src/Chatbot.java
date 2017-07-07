@@ -33,6 +33,10 @@ public class Chatbot extends JFrame implements ActionListener,KeyListener{
 			shit.requestFocus();
 			s="";
 		}
+                else if(e.getSource()==shit&e.getKeyChar()=='\n')
+                {
+                    actionPerformed(new ActionEvent(btSend,0,null));
+                }
 		else if(e.getSource()==shit&e.getKeyChar()!='\b')
 			s=s+e.getKeyChar();
 		else{
